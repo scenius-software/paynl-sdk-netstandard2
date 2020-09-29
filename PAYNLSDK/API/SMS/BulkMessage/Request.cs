@@ -1,16 +1,11 @@
 ﻿using Newtonsoft.Json;
 using PAYNLSDK.Exceptions;
 using PAYNLSDK.Utilities;
-using System;
-using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PAYNLSDK.API.SMS.BulkMessage
 {
-    public class Request : RequestBase
+	public class Request : RequestBase
     {
         [JsonProperty("org")]
         public string Sender { get; set; }

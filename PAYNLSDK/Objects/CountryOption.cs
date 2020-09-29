@@ -1,15 +1,13 @@
-﻿using System;
-using Newtonsoft.Json;
-using PAYNLSDK.Enums;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Converters;
 using System.Collections.Generic;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// General Payment options details for an individual country.
-    /// </summary>
-    public class CountryOption
+	/// <summary>
+	/// General Payment options details for an individual country.
+	/// </summary>
+	public class CountryOption
     {
         /// <summary>
         /// Country option ID

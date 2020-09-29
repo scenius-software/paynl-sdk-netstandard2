@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PAYNLSDK.Net
+﻿namespace PAYNLSDK.Net
 {
-    // A more complete list of http status codes from http://httpstatus.es/
-    enum HttpStatusCode
+	// A more complete list of http status codes from http://httpstatus.es/
+	enum HttpStatusCode
     {
         // 1xx informational
         Continue = 100,

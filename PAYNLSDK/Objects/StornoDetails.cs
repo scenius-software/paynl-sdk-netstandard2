@@ -1,12 +1,11 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Storno Details
-    /// </summary>
-    public class StornoDetails
+	/// <summary>
+	/// Storno Details
+	/// </summary>
+	public class StornoDetails
     {
         /// <summary>
         /// ID of the refund

@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PAYNLSDK.Utilities
 {
-    class Reflection
+	class Reflection
     {
         public static bool IsNullable(Type t)
         {

@@ -1,14 +1,13 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Enums;
 using PAYNLSDK.Converters;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// General Address Details
-    /// </summary>
-    public class Address
+	/// <summary>
+	/// General Address Details
+	/// </summary>
+	public class Address
     {
         /// <summary>
         /// Initials for Address

@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PAYNLSDK.Enums
 {
-    /// <summary>
-    /// Utility to convert Enum Values to EnumMember Values and vice versa.
-    /// </summary>
-    public class EnumUtil
+	/// <summary>
+	/// Utility to convert Enum Values to EnumMember Values and vice versa.
+	/// </summary>
+	public class EnumUtil
     {
         /// <summary>
         /// Return the value of an EnumMember

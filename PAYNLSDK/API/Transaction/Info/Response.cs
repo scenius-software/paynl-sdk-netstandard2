@@ -1,10 +1,9 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Objects;
 
 namespace PAYNLSDK.API.Transaction.Info
 {
-    public class Response : ResponseBase
+	public class Response : ResponseBase
     {
         [JsonProperty("connection")]
         public Connection Connection { get; protected set; }

@@ -1,28 +1,24 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PAYNLSDK.Converters
 {
-    class ErrorIdConverter : JsonConverter
+	class ErrorIdConverter : JsonConverter
     {
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
             string result = serializer.Deserialize<string>(reader);
-            if (result == String.Empty)
+            if (result == string.Empty)
             {
                 return 0;
             }
             try
             {
-                return Int32.Parse(result);
+                return int.Parse(result);
             }
             catch (Exception e)
             {
-                throw new JsonSerializationException(String.Format("Unexpected conversion '{0}' when parsing errorId.", result));
+                throw new JsonSerializationException(string.Format("Unexpected conversion '{0}' when parsing errorId.", result));
             }
         }
 

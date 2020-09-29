@@ -3,16 +3,15 @@ using Newtonsoft.Json;
 using PAYNLSDK.Utilities;
 using System.Collections.Specialized;
 using PAYNLSDK.Exceptions;
-using PAYNLSDK.Objects;
 using PAYNLSDK.Converters;
 using System.Collections.Generic;
 
 namespace PAYNLSDK.API.Refund.Transaction
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    public class Request : RequestBase
+	/// <summary>
+	/// 
+	/// </summary>
+	public class Request : RequestBase
     {
         /// <summary>
         /// 
@@ -135,7 +134,7 @@ namespace PAYNLSDK.API.Refund.Transaction
         /// 
         /// </summary>
         /// <returns></returns>
-        public override System.Collections.Specialized.NameValueCollection GetParameters()
+        public override NameValueCollection GetParameters()
         {
             NameValueCollection nvc = base.GetParameters();
 

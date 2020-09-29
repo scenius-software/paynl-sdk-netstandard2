@@ -15,7 +15,7 @@ namespace PAYNLSDK
         /// </summary>
         /// <param name="paymentMethodId">Payment Method ID</param>
         /// <returns>Response containing the payment method data</returns>
-        static public PAYNLSDK.API.PaymentMethod.Get.Response Get(int paymentMethodId)
+        static public API.PaymentMethod.Get.Response Get(int paymentMethodId)
         {
             PaymentMethodGet request = new PaymentMethodGet();
             request.PaymentMethodId = paymentMethodId;
@@ -28,7 +28,7 @@ namespace PAYNLSDK
         /// Get information for all payment methods.
         /// </summary>
         /// <returns>Response containing a list of information for all payment methods</returns>
-        static public PAYNLSDK.API.PaymentMethod.GetAll.Response GetAll()
+        static public API.PaymentMethod.GetAll.Response GetAll()
         {
             PaymentMethodGetAll request = new PaymentMethodGetAll();
             Client c = new Client("", "");

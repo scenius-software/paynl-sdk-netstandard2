@@ -1,13 +1,12 @@
 ﻿using System;
 using Newtonsoft.Json;
-using PAYNLSDK.Enums;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Transaction data
-    /// </summary>
-    public class TransactionData
+	/// <summary>
+	/// Transaction data
+	/// </summary>
+	public class TransactionData
     {
         /// <summary>
         /// The currency of the transaction. If omitted, EUR is used.

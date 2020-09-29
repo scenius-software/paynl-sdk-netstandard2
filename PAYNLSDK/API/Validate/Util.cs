@@ -1,10 +1,9 @@
 ﻿using Newtonsoft.Json;
 using PAYNLSDK.Net;
-using System;
 
 namespace PAYNLSDK.API.Validate
 {
-    public class Util
+	public class Util
     {
         public IClient Client { get; set; }
 

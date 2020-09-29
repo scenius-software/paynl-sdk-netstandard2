@@ -1,13 +1,9 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PAYNLSDK.Converters
 {
-    class BooleanConverter : JsonConverter
+	class BooleanConverter : JsonConverter
     {
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
@@ -18,7 +14,7 @@ namespace PAYNLSDK.Converters
             }
             catch (Exception)
             {
-                return Boolean.Parse(serializer.Deserialize<string>(reader));
+                return bool.Parse(serializer.Deserialize<string>(reader));
             }
         }
 
@@ -31,7 +27,7 @@ namespace PAYNLSDK.Converters
 
         public override bool CanConvert(Type objectType)
         {
-            return typeof(Boolean).IsAssignableFrom(objectType);
+            return typeof(bool).IsAssignableFrom(objectType);
         }
     }
 }

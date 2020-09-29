@@ -1,10 +1,9 @@
 ﻿using Newtonsoft.Json;
 using PAYNLSDK.Objects;
-using System;
 
 namespace PAYNLSDK.API
 {
-    public abstract class ResponseBase
+	public abstract class ResponseBase
     {
         /// <summary>
         /// The Error if the request led to a failed response

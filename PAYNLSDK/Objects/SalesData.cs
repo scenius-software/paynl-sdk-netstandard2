@@ -1,15 +1,14 @@
 ﻿using System;
 using Newtonsoft.Json;
-using PAYNLSDK.Enums;
 using PAYNLSDK.Converters;
 using System.Collections.Generic;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Specification of sales data for a transaction
-    /// </summary>
-    public class SalesData
+	/// <summary>
+	/// Specification of sales data for a transaction
+	/// </summary>
+	public class SalesData
     {
         /// <summary>
         /// Invoice date

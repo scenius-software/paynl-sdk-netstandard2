@@ -2,19 +2,15 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
-using System.Threading.Tasks;
 using PAYNLSDK.API;
 using PAYNLSDK.Exceptions;
-using PAYNLSDK.Objects;
 using Newtonsoft.Json;
-using System.Collections.Specialized;
 
 namespace PAYNLSDK.Net
 {
-    public class Client : IClient
+	public class Client : IClient
     {
         /// <summary>
         /// PAYNL Endpoint
@@ -66,7 +62,7 @@ namespace PAYNLSDK.Net
         /// </summary>
         public string UserAgent
         {
-            get { return string.Format("PAYNL/SDK/{0} DotNet/{1}", ClientVersion, ""); }
+            get { return $"PAYNL/SDK/{ClientVersion} DotNet/{""}"; }
         }
 
         /// <summary>
@@ -139,7 +135,7 @@ namespace PAYNLSDK.Net
         /// <returns></returns>
         private HttpWebRequest PrepareRequest(string requestUriString, string method)
         {
-            string uriString = String.Format("{0}/{1}", Endpoint, requestUriString);
+            string uriString = $"{Endpoint}/{requestUriString}";
             var uri = new Uri(uriString);
             var request = WebRequest.Create(uri) as HttpWebRequest;
             request.UserAgent = UserAgent;
@@ -183,7 +179,7 @@ namespace PAYNLSDK.Net
                             return responseReader.ReadToEnd();
                         }
                     }
-                    throw new ErrorException(String.Format("Unexpected status code {0}", statusCode));
+                    throw new ErrorException(string.Format("Unexpected status code {0}", statusCode));
                 }
             }
             catch (WebException e)
@@ -192,7 +188,7 @@ namespace PAYNLSDK.Net
             }
             catch (Exception e)
             {
-                throw new ErrorException(String.Format("Unhandled exception {0}", e), e);
+                throw new ErrorException(string.Format("Unhandled exception {0}", e), e);
             }
         }
 
@@ -255,9 +251,9 @@ namespace PAYNLSDK.Net
                         }
                         catch (Exception ex1)
                         {
-                            return new ErrorException(String.Format("Unknown error for {0}", statusCode), e);
+                            return new ErrorException($"Unknown error for {statusCode}", e);
                         }
-                        return new ErrorException(String.Format("Unknown error for {0}", statusCode), e);
+                        return new ErrorException($"Unknown error for {statusCode}", e);
                     }
                 case HttpStatusCode.InternalServerError:
                 case HttpStatusCode.NotImplemented:
@@ -275,9 +271,8 @@ namespace PAYNLSDK.Net
                 case HttpStatusCode.NetworkConnectTimeoutError:
                     return new ErrorException("Something went wrong on our end, please try again", e);
                 default:
-                    return new ErrorException(String.Format("Unhandled status code {0}", statusCode), e);
+                    return new ErrorException($"Unhandled status code {statusCode}", e);
             }
         }
-    
     }
 }

@@ -1,12 +1,11 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Payment Method information
-    /// </summary>
-    public class PaymentMethod
+	/// <summary>
+	/// Payment Method information
+	/// </summary>
+	public class PaymentMethod
     {
         /// <summary>
         /// Payment method ID

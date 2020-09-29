@@ -1,16 +1,14 @@
-﻿using System;
-using Newtonsoft.Json;
-using PAYNLSDK.Enums;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Converters;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Transaction Start Information object.
-    /// This object is part of the response returned after a call to start a transaction and contains the 
-    /// transaction ID and payment URL you should redirect the enduser to.
-    /// </summary>
-    public class TransactionStartInfo
+	/// <summary>
+	/// Transaction Start Information object.
+	/// This object is part of the response returned after a call to start a transaction and contains the 
+	/// transaction ID and payment URL you should redirect the enduser to.
+	/// </summary>
+	public class TransactionStartInfo
     {
         /// <summary>
         /// Transaction ID

@@ -3,11 +3,10 @@ using Newtonsoft.Json;
 using PAYNLSDK.Utilities;
 using System.Collections.Specialized;
 using PAYNLSDK.Exceptions;
-using PAYNLSDK.Objects;
 
 namespace PAYNLSDK.API.Banktransfer.Add
 {
-    public class Request : RequestBase
+	public class Request : RequestBase
     {
         public Request(int amount, string bankAccountHolder, string bankAccountNumber, string bankAccountBic)
         {
@@ -125,7 +124,7 @@ namespace PAYNLSDK.API.Banktransfer.Add
             }
         }
 
-        public override System.Collections.Specialized.NameValueCollection GetParameters()
+        public override NameValueCollection GetParameters()
         {
             NameValueCollection nvc = base.GetParameters();
 

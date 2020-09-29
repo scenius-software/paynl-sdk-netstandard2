@@ -1,14 +1,9 @@
 ﻿using PAYNLSDK.API;
 using PAYNLSDK.Net.ProxyConfigurationInjector;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PAYNLSDK.Net
 {
-    public interface IClient
+	public interface IClient
     {
         /// <summary>
         /// PAYNL API TOKEN

@@ -1,13 +1,10 @@
 ﻿using Newtonsoft.Json;
-using PAYNLSDK.Converters;
 using PAYNLSDK.Exceptions;
 using PAYNLSDK.Utilities;
-using System;
-using System.Collections.Specialized;
 
 namespace PAYNLSDK.API.Validate.GetServerIps
 {
-    public class Request : RequestBase
+	public class Request : RequestBase
     {
         public override int Version
         {

@@ -1,16 +1,14 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Utilities;
 using System.Collections.Specialized;
 using PAYNLSDK.Exceptions;
-using PAYNLSDK.Objects;
 
 namespace PAYNLSDK.API.Refund.Info
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    public class Request : RequestBase
+	/// <summary>
+	/// 
+	/// </summary>
+	public class Request : RequestBase
     {
         /// <summary>
         /// create new instance
@@ -84,7 +82,7 @@ namespace PAYNLSDK.API.Refund.Info
         /// 
         /// </summary>
         /// <returns></returns>
-        public override System.Collections.Specialized.NameValueCollection GetParameters()
+        public override NameValueCollection GetParameters()
         {
             NameValueCollection nvc = base.GetParameters();
 

@@ -1,13 +1,12 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Converters;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Error definition
-    /// </summary>
-    public class Error
+	/// <summary>
+	/// Error definition
+	/// </summary>
+	public class Error
     {
         /// <summary>
         /// Result of a call. In case of a real error, this SHOULD always be false.

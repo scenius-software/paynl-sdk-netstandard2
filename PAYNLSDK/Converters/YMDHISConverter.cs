@@ -93,7 +93,7 @@ namespace PAYNLSDK.Converters
                 }
                 return null;
             }
-            throw new JsonSerializationException(String.Format("Unexpected token '{0}' when parsing date.", reader.TokenType));
+            throw new JsonSerializationException(string.Format("Unexpected token '{0}' when parsing date.", reader.TokenType));
         }
 
         public override bool CanConvert(Type objectType)

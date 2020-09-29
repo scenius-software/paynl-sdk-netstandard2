@@ -1,15 +1,10 @@
 ﻿using PAYNLSDK.Net;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PAYNLSDK
 {
-    public class Banktransfer
+	public class Banktransfer
     {
-        static public API.Banktransfer.Add.Response Add(PAYNLSDK.API.Banktransfer.Add.Request request)
+        static public API.Banktransfer.Add.Response Add(API.Banktransfer.Add.Request request)
         {
             Client c = new Client("", "");
             c.PerformRequest(request);

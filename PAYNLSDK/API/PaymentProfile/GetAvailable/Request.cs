@@ -1,5 +1,4 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Utilities;
 using System.Collections.Specialized;
 using PAYNLSDK.Converters;
@@ -7,7 +6,7 @@ using PAYNLSDK.Exceptions;
 
 namespace PAYNLSDK.API.PaymentProfile.GetAvailable
 {
-    public class Request : RequestBase
+	public class Request : RequestBase
     {
         [JsonProperty("categoryId")]
         public int CategoryId { get; set; }
@@ -74,7 +73,7 @@ namespace PAYNLSDK.API.PaymentProfile.GetAvailable
             {
                 throw new ErrorException("rawResponse is empty!");
             }
-            PAYNLSDK.Objects.PaymentProfile[] pm = JsonConvert.DeserializeObject<PAYNLSDK.Objects.PaymentProfile[]>(RawResponse);
+			Objects.PaymentProfile[] pm = JsonConvert.DeserializeObject<Objects.PaymentProfile[]>(RawResponse);
             Response r = new Response();
             r.PaymentProfiles = pm;
             response = r;

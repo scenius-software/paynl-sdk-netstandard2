@@ -1,13 +1,12 @@
 ﻿using Newtonsoft.Json;
-using System;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// General Statistics details.
-    /// These can be used to track your own statistics on transactions and will be returned when Transaction Info is requested.
-    /// </summary>
-    public class StatsDetails
+	/// <summary>
+	/// General Statistics details.
+	/// These can be used to track your own statistics on transactions and will be returned when Transaction Info is requested.
+	/// </summary>
+	public class StatsDetails
     {
         /// <summary>
         /// ID for the Payment session these details belong to

@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace PAYNLSDK.API.Validate.GetServerIps
+﻿namespace PAYNLSDK.API.Validate.GetServerIps
 {
-    public class Response : ResponseBase
+	public class Response : ResponseBase
     {
         public string[] IPAddresses { get; set; }
     }

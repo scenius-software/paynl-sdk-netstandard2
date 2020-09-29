@@ -16,7 +16,7 @@ namespace PAYNLSDK
         /// </summary>
         /// <param name="paymentProfileId">Payment profile ID</param>
         /// <returns>Payment profile response</returns>
-        static public PAYNLSDK.API.PaymentProfile.Get.Response Get(int paymentProfileId)
+        static public API.PaymentProfile.Get.Response Get(int paymentProfileId)
         {
             PaymentProfileGet request = new PaymentProfileGet();
             request.PaymentProfileId = paymentProfileId;
@@ -29,7 +29,7 @@ namespace PAYNLSDK
         /// Get details for all payment profiles
         /// </summary>
         /// <returns>List of payment profile info</returns>
-        static public PAYNLSDK.API.PaymentProfile.GetAll.Response GetAll()
+        static public API.PaymentProfile.GetAll.Response GetAll()
         {
             PaymentProfileGetAll request = new PaymentProfileGetAll();
             Client c = new Client("", "");
@@ -45,7 +45,7 @@ namespace PAYNLSDK
         /// <param name="paymentMethodId">Payment Method ID</param>
         /// <param name="showNotAllowedOnRegistration">Indicator wether to show profiles that are initially not allowed on registration. </param>
         /// <returns>Response containing the list of payment profile information</returns>
-        static public PAYNLSDK.API.PaymentProfile.GetAvailable.Response GetAvailable(int categoryId, int? programId, int? paymentMethodId, bool? showNotAllowedOnRegistration)
+        static public API.PaymentProfile.GetAvailable.Response GetAvailable(int categoryId, int? programId, int? paymentMethodId, bool? showNotAllowedOnRegistration)
         {
             PaymentProfileGetAvailable request = new PaymentProfileGetAvailable();
             request.CategoryId = categoryId;
@@ -64,7 +64,7 @@ namespace PAYNLSDK
         /// <param name="programId">ID of the program for which the payment options are used. (Only available if the program option is enabled!)</param>
         /// <param name="paymentMethodId">Payment Method ID</param>
         /// <returns>Response containing the list of payment profile information</returns>
-        static public PAYNLSDK.API.PaymentProfile.GetAvailable.Response GetAvailable(int categoryId, int? programId, int? paymentMethodId)
+        static public API.PaymentProfile.GetAvailable.Response GetAvailable(int categoryId, int? programId, int? paymentMethodId)
         {
             return GetAvailable(categoryId, programId, paymentMethodId, null);
         }
@@ -75,7 +75,7 @@ namespace PAYNLSDK
         /// <param name="categoryId">The ID of the category of the service the payment options are used for</param>
         /// <param name="programId">ID of the program for which the payment options are used. (Only available if the program option is enabled!)</param>
         /// <returns>Response containing the list of payment profile information</returns>
-        static public PAYNLSDK.API.PaymentProfile.GetAvailable.Response GetAvailable(int categoryId, int? programId)
+        static public API.PaymentProfile.GetAvailable.Response GetAvailable(int categoryId, int? programId)
         {
             return GetAvailable(categoryId, programId, null, null);
         }
@@ -85,7 +85,7 @@ namespace PAYNLSDK
         /// </summary>
         /// <param name="categoryId">The ID of the category of the service the payment options are used for</param>
         /// <returns>Response containing the list of payment profile information</returns>
-        static public PAYNLSDK.API.PaymentProfile.GetAvailable.Response GetAvailable(int categoryId)
+        static public API.PaymentProfile.GetAvailable.Response GetAvailable(int categoryId)
         {
             return GetAvailable(categoryId, null, null, null);
         }

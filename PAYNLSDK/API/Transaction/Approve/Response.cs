@@ -1,9 +1,8 @@
 ﻿using Newtonsoft.Json;
-using System;
 
 namespace PAYNLSDK.API.Transaction.Approve
 {
-    public class Response : ResponseBase
+	public class Response : ResponseBase
     {
 
         [JsonProperty("message")]

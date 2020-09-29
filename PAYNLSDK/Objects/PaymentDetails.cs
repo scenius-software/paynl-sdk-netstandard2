@@ -1,14 +1,13 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Enums;
 using PAYNLSDK.Converters;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Generl dtails regarding the payment
-    /// </summary>
-    public class PaymentDetails
+	/// <summary>
+	/// Generl dtails regarding the payment
+	/// </summary>
+	public class PaymentDetails
     {
         /// <summary>
         /// Amount of the session (in cents, eg. 1235)

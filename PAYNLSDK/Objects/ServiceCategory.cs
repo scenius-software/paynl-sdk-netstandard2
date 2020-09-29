@@ -1,12 +1,11 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Service Category information
-    /// </summary>
-    public class ServiceCategory
+	/// <summary>
+	/// Service Category information
+	/// </summary>
+	public class ServiceCategory
     {
         /// <summary>
         /// ID of the Service Category

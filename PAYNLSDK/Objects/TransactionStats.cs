@@ -1,14 +1,13 @@
 ﻿using System;
 using Newtonsoft.Json;
-using PAYNLSDK.Enums;
 using PAYNLSDK.Converters;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Payment Transaction Information
-    /// </summary>
-    public class TransactionStats
+	/// <summary>
+	/// Payment Transaction Information
+	/// </summary>
+	public class TransactionStats
     {
         /// <summary>
         /// Transaction identifier. 

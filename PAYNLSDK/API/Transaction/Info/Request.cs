@@ -1,12 +1,11 @@
 ﻿using Newtonsoft.Json;
 using PAYNLSDK.Exceptions;
 using PAYNLSDK.Utilities;
-using System;
 using System.Collections.Specialized;
 
 namespace PAYNLSDK.API.Transaction.Info
 {
-    public class Request : RequestBase
+	public class Request : RequestBase
     {
 
         public string TransactionId { get; set; }

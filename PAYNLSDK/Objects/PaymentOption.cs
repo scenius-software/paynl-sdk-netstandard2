@@ -1,14 +1,13 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Enums;
 using System.Collections.Generic;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Payment Option information base
-    /// </summary>
-    abstract public class PaymentOptionBase
+	/// <summary>
+	/// Payment Option information base
+	/// </summary>
+	abstract public class PaymentOptionBase
     {
         /// <summary>
         /// ID for this payment (sub)option

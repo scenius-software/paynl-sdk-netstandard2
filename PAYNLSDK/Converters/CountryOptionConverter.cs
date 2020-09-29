@@ -2,13 +2,10 @@
 using PAYNLSDK.Objects;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PAYNLSDK.Converters
 {
-    class CountryOptionConverter : JsonConverter
+	class CountryOptionConverter : JsonConverter
     {
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
@@ -17,7 +14,7 @@ namespace PAYNLSDK.Converters
                 var dict = serializer.Deserialize<Dictionary<string, CountryOption>>(reader);
                 return dict;
             }
-            throw new JsonSerializationException(String.Format("Unexpected token '{0}' when parsing country options.", reader.TokenType));
+            throw new JsonSerializationException(string.Format("Unexpected token '{0}' when parsing country options.", reader.TokenType));
 
         }
 

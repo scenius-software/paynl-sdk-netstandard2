@@ -1,14 +1,13 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Converters;
 using PAYNLSDK.Enums;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Ordered product information
-    /// </summary>
-    public class OrderData
+	/// <summary>
+	/// Ordered product information
+	/// </summary>
+	public class OrderData
     {
         /// <summary>
         /// Your systems product ID

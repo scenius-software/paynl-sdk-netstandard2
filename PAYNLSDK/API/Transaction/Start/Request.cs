@@ -202,7 +202,7 @@ namespace PAYNLSDK.API.Transaction.Start
                 }
                 if (!ParameterValidator.IsNull(Enduser.Gender))
                 {
-                    nvc.Add("enduser[gender]", EnumUtil.ToEnumString<Gender>((Gender)Enduser.Gender));
+                    nvc.Add("enduser[gender]", EnumUtil.ToEnumString((Gender)Enduser.Gender));
                 }
                 if (!ParameterValidator.IsNull(Enduser.BirthDate))
                 {
@@ -276,7 +276,7 @@ namespace PAYNLSDK.API.Transaction.Start
                     }
                     if (!ParameterValidator.IsNull(Enduser.InvoiceAddress.Gender))
                     {
-                        string gender = EnumUtil.ToEnumString<Gender>((Gender)Enduser.InvoiceAddress.Gender);
+                        string gender = EnumUtil.ToEnumString((Gender)Enduser.InvoiceAddress.Gender);
                         nvc.Add("enduser[invoiceAddress][gender]", gender);
                     }
                     if (!ParameterValidator.IsEmpty(Enduser.InvoiceAddress.StreetName))
@@ -355,11 +355,11 @@ namespace PAYNLSDK.API.Transaction.Start
 
                         if (!ParameterValidator.IsNull(data.VatCode))
                         {
-                            nvc.Add(string.Format("saleData[orderData][{0}][vatCode]", i), EnumUtil.ToEnumString<TaxClass>((TaxClass)data.VatCode));
+                            nvc.Add(string.Format("saleData[orderData][{0}][vatCode]", i), EnumUtil.ToEnumString((TaxClass)data.VatCode));
                         }
                         if (!ParameterValidator.IsNull(data.ProductType))
                         {
-                            nvc.Add(string.Format("saleData[orderData][{0}][productType]", i), EnumUtil.ToEnumString<ProductType>((ProductType)data.ProductType));
+                            nvc.Add(string.Format("saleData[orderData][{0}][productType]", i), EnumUtil.ToEnumString((ProductType)data.ProductType));
                         }
                         i++;
                     }

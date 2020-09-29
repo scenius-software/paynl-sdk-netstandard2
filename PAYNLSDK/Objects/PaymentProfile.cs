@@ -1,14 +1,12 @@
-﻿using System;
-using Newtonsoft.Json;
-using PAYNLSDK.Enums;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Converters;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Payment Profile information
-    /// </summary>
-    public class PaymentProfile
+	/// <summary>
+	/// Payment Profile information
+	/// </summary>
+	public class PaymentProfile
     {
         /// <summary>
         /// Payment Profile ID

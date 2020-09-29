@@ -1,13 +1,12 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Enums;
 
 namespace PAYNLSDK.Objects
 {
-    /// <summary>
-    /// Merchant information
-    /// </summary>
-    public class Merchant
+	/// <summary>
+	/// Merchant information
+	/// </summary>
+	public class Merchant
     {
         /// <summary>
         /// Merchant ID

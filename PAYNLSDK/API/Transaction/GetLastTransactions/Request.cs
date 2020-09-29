@@ -1,12 +1,11 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Utilities;
 using System.Collections.Specialized;
 using PAYNLSDK.Exceptions;
 
 namespace PAYNLSDK.API.Transaction.GetLastTransactions
 {
-    public class Request : RequestBase
+	public class Request : RequestBase
     {
         [JsonProperty("merchantId")]
         public string MerchantId { get; set; }

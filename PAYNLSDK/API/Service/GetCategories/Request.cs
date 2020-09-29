@@ -1,13 +1,11 @@
-﻿using System;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using PAYNLSDK.Utilities;
 using System.Collections.Specialized;
-using PAYNLSDK.Converters;
 using PAYNLSDK.Exceptions;
 
 namespace PAYNLSDK.API.Service.GetCategories
 {
-    public class Request : RequestBase
+	public class Request : RequestBase
     {
         [JsonProperty("paymentOptionId")]
         public int? PaymentOptionId { get; set; }
@@ -50,7 +48,7 @@ namespace PAYNLSDK.API.Service.GetCategories
             {
                 throw new ErrorException("rawResponse is empty!");
             }
-            PAYNLSDK.Objects.ServiceCategory[] pm = JsonConvert.DeserializeObject<PAYNLSDK.Objects.ServiceCategory[]>(RawResponse);
+			Objects.ServiceCategory[] pm = JsonConvert.DeserializeObject<Objects.ServiceCategory[]>(RawResponse);
             Response r = new Response();
             r.ServiceCategories = pm;
             response = r;
